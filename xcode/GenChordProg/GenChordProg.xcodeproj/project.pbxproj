@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB4415FC26BFA28200AF97C1 /* GenChordProgApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4415FB26BFA28200AF97C1 /* GenChordProgApp.swift */; };
+		BB4415FE26BFA28200AF97C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4415FD26BFA28200AF97C1 /* ContentView.swift */; };
+		BB44160026BFA28400AF97C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4415FF26BFA28400AF97C1 /* Assets.xcassets */; };
+		BB44160326BFA28400AF97C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB44160226BFA28400AF97C1 /* Preview Assets.xcassets */; };
+		BB44160E26BFA28400AF97C1 /* GenChordProgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB44160D26BFA28400AF97C1 /* GenChordProgTests.swift */; };
+		BB44161926BFA28400AF97C1 /* GenChordProgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB44161826BFA28400AF97C1 /* GenChordProgUITests.swift */; };
+		BB44162926BFA37100AF97C1 /* GenChordProgCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = BB44162826BFA37100AF97C1 /* GenChordProgCommon.c */; };
+		BB44162B26C0006A00AF97C1 /* GenChordProgCommonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB44162A26C0006A00AF97C1 /* GenChordProgCommonWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB44160A26BFA28400AF97C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4415F026BFA28200AF97C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4415F726BFA28200AF97C1;
+			remoteInfo = GenChordProg;
+		};
+		BB44161526BFA28400AF97C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4415F026BFA28200AF97C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4415F726BFA28200AF97C1;
+			remoteInfo = GenChordProg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB4415F826BFA28200AF97C1 /* GenChordProg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenChordProg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4415FB26BFA28200AF97C1 /* GenChordProgApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenChordProgApp.swift; sourceTree = "<group>"; };
+		BB4415FD26BFA28200AF97C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB4415FF26BFA28400AF97C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB44160226BFA28400AF97C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB44160426BFA28400AF97C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB44160926BFA28400AF97C1 /* GenChordProgTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenChordProgTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB44160D26BFA28400AF97C1 /* GenChordProgTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenChordProgTests.swift; sourceTree = "<group>"; };
+		BB44160F26BFA28400AF97C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB44161426BFA28400AF97C1 /* GenChordProgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenChordProgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB44161826BFA28400AF97C1 /* GenChordProgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenChordProgUITests.swift; sourceTree = "<group>"; };
+		BB44161A26BFA28400AF97C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB44162626BFA37100AF97C1 /* GenChordProg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenChordProg-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB44162726BFA37100AF97C1 /* GenChordProgCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenChordProgCommon.h; sourceTree = "<group>"; };
+		BB44162826BFA37100AF97C1 /* GenChordProgCommon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenChordProgCommon.c; sourceTree = "<group>"; };
+		BB44162A26C0006A00AF97C1 /* GenChordProgCommonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenChordProgCommonWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB4415F526BFA28200AF97C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB44160626BFA28400AF97C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB44161126BFA28400AF97C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB4415EF26BFA28200AF97C1 = {
+			isa = PBXGroup;
+			children = (
+				BB4415FA26BFA28200AF97C1 /* GenChordProg */,
+				BB44160C26BFA28400AF97C1 /* GenChordProgTests */,
+				BB44161726BFA28400AF97C1 /* GenChordProgUITests */,
+				BB4415F926BFA28200AF97C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB4415F926BFA28200AF97C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB4415F826BFA28200AF97C1 /* GenChordProg.app */,
+				BB44160926BFA28400AF97C1 /* GenChordProgTests.xctest */,
+				BB44161426BFA28400AF97C1 /* GenChordProgUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB4415FA26BFA28200AF97C1 /* GenChordProg */ = {
+			isa = PBXGroup;
+			children = (
+				BB4415FB26BFA28200AF97C1 /* GenChordProgApp.swift */,
+				BB44162A26C0006A00AF97C1 /* GenChordProgCommonWrapper.swift */,
+				BB4415FD26BFA28200AF97C1 /* ContentView.swift */,
+				BB4415FF26BFA28400AF97C1 /* Assets.xcassets */,
+				BB44160426BFA28400AF97C1 /* Info.plist */,
+				BB44160126BFA28400AF97C1 /* Preview Content */,
+				BB44162726BFA37100AF97C1 /* GenChordProgCommon.h */,
+				BB44162826BFA37100AF97C1 /* GenChordProgCommon.c */,
+				BB44162626BFA37100AF97C1 /* GenChordProg-Bridging-Header.h */,
+			);
+			path = GenChordProg;
+			sourceTree = "<group>";
+		};
+		BB44160126BFA28400AF97C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB44160226BFA28400AF97C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB44160C26BFA28400AF97C1 /* GenChordProgTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB44160D26BFA28400AF97C1 /* GenChordProgTests.swift */,
+				BB44160F26BFA28400AF97C1 /* Info.plist */,
+			);
+			path = GenChordProgTests;
+			sourceTree = "<group>";
+		};
+		BB44161726BFA28400AF97C1 /* GenChordProgUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB44161826BFA28400AF97C1 /* GenChordProgUITests.swift */,
+				BB44161A26BFA28400AF97C1 /* Info.plist */,
+			);
+			path = GenChordProgUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB4415F726BFA28200AF97C1 /* GenChordProg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB44161D26BFA28400AF97C1 /* Build configuration list for PBXNativeTarget "GenChordProg" */;
+			buildPhases = (
+				BB4415F426BFA28200AF97C1 /* Sources */,
+				BB4415F526BFA28200AF97C1 /* Frameworks */,
+				BB4415F626BFA28200AF97C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenChordProg;
+			productName = GenChordProg;
+			productReference = BB4415F826BFA28200AF97C1 /* GenChordProg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB44160826BFA28400AF97C1 /* GenChordProgTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB44162026BFA28400AF97C1 /* Build configuration list for PBXNativeTarget "GenChordProgTests" */;
+			buildPhases = (
+				BB44160526BFA28400AF97C1 /* Sources */,
+				BB44160626BFA28400AF97C1 /* Frameworks */,
+				BB44160726BFA28400AF97C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB44160B26BFA28400AF97C1 /* PBXTargetDependency */,
+			);
+			name = GenChordProgTests;
+			productName = GenChordProgTests;
+			productReference = BB44160926BFA28400AF97C1 /* GenChordProgTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB44161326BFA28400AF97C1 /* GenChordProgUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB44162326BFA28400AF97C1 /* Build configuration list for PBXNativeTarget "GenChordProgUITests" */;
+			buildPhases = (
+				BB44161026BFA28400AF97C1 /* Sources */,
+				BB44161126BFA28400AF97C1 /* Frameworks */,
+				BB44161226BFA28400AF97C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB44161626BFA28400AF97C1 /* PBXTargetDependency */,
+			);
+			name = GenChordProgUITests;
+			productName = GenChordProgUITests;
+			productReference = BB44161426BFA28400AF97C1 /* GenChordProgUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB4415F026BFA28200AF97C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BB4415F726BFA28200AF97C1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					BB44160826BFA28400AF97C1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BB4415F726BFA28200AF97C1;
+					};
+					BB44161326BFA28400AF97C1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BB4415F726BFA28200AF97C1;
+					};
+				};
+			};
+			buildConfigurationList = BB4415F326BFA28200AF97C1 /* Build configuration list for PBXProject "GenChordProg" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB4415EF26BFA28200AF97C1;
+			productRefGroup = BB4415F926BFA28200AF97C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB4415F726BFA28200AF97C1 /* GenChordProg */,
+				BB44160826BFA28400AF97C1 /* GenChordProgTests */,
+				BB44161326BFA28400AF97C1 /* GenChordProgUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB4415F626BFA28200AF97C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB44160326BFA28400AF97C1 /* Preview Assets.xcassets in Resources */,
+				BB44160026BFA28400AF97C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB44160726BFA28400AF97C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB44161226BFA28400AF97C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB4415F426BFA28200AF97C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4415FE26BFA28200AF97C1 /* ContentView.swift in Sources */,
+				BB44162926BFA37100AF97C1 /* GenChordProgCommon.c in Sources */,
+				BB44162B26C0006A00AF97C1 /* GenChordProgCommonWrapper.swift in Sources */,
+				BB4415FC26BFA28200AF97C1 /* GenChordProgApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB44160526BFA28400AF97C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB44160E26BFA28400AF97C1 /* GenChordProgTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB44161026BFA28400AF97C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB44161926BFA28400AF97C1 /* GenChordProgUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB44160B26BFA28400AF97C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4415F726BFA28200AF97C1 /* GenChordProg */;
+			targetProxy = BB44160A26BFA28400AF97C1 /* PBXContainerItemProxy */;
+		};
+		BB44161626BFA28400AF97C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4415F726BFA28200AF97C1 /* GenChordProg */;
+			targetProxy = BB44161526BFA28400AF97C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB44161B26BFA28400AF97C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB44161C26BFA28400AF97C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB44161E26BFA28400AF97C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GenChordProg/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GenChordProg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mame.GenChordProg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GenChordProg/GenChordProg-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB44161F26BFA28400AF97C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GenChordProg/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GenChordProg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mame.GenChordProg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GenChordProg/GenChordProg-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB44162126BFA28400AF97C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenChordProgTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mame.GenChordProgTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenChordProg.app/GenChordProg";
+			};
+			name = Debug;
+		};
+		BB44162226BFA28400AF97C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenChordProgTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mame.GenChordProgTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenChordProg.app/GenChordProg";
+			};
+			name = Release;
+		};
+		BB44162426BFA28400AF97C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenChordProgUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mame.GenChordProgUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenChordProg;
+			};
+			name = Debug;
+		};
+		BB44162526BFA28400AF97C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenChordProgUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mame.GenChordProgUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenChordProg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB4415F326BFA28200AF97C1 /* Build configuration list for PBXProject "GenChordProg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB44161B26BFA28400AF97C1 /* Debug */,
+				BB44161C26BFA28400AF97C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB44161D26BFA28400AF97C1 /* Build configuration list for PBXNativeTarget "GenChordProg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB44161E26BFA28400AF97C1 /* Debug */,
+				BB44161F26BFA28400AF97C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB44162026BFA28400AF97C1 /* Build configuration list for PBXNativeTarget "GenChordProgTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB44162126BFA28400AF97C1 /* Debug */,
+				BB44162226BFA28400AF97C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB44162326BFA28400AF97C1 /* Build configuration list for PBXNativeTarget "GenChordProgUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB44162426BFA28400AF97C1 /* Debug */,
+				BB44162526BFA28400AF97C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB4415F026BFA28200AF97C1 /* Project object */;
+}
