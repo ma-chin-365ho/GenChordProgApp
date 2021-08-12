@@ -4,15 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
 
-    <TextView
-        android:id="@+id/chordprogText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chordprogText"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:autoText="false"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="c | C | c | C"
+            android:textSize="48sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="0,1,2,3"
+            android:stretchColumns="0,1,2,3"
+            android:visibility="visible">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewKey"
+                    android:layout_width="113dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Key="
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerKey"
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/textViewTempo"
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="♩="
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/textViewTempoValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="34sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewChangeCount"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:text="Change="
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerChangeCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/buttonReload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Reload"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

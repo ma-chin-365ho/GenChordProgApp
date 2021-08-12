@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">GenChordProgApp</string>
+    <string name="app_name">Generate Chord Progression</string>
+    <string-array name="keys_array">
+        <item>A</item>
+        <item>A#/Bb</item>
+        <item>B</item>
+        <item>C</item>
+        <item>C#/Db</item>
+        <item>D</item>
+        <item>D#/Eb</item>
+        <item>E</item>
+        <item>F</item>
+        <item>F#/Gb</item>
+        <item>G</item>
+        <item>G#/Ab</item>
+    </string-array>
+    <string-array name="change_counts_array">
+        <item>No Change</item>
+        <item>1 time</item>
+        <item>3 times</item>
+        <item>5 times</item>
+        <item>7 times</item>
+        <item>9 times</item>
+        <item>11 times</item>
+        <item>13 times</item>
+        <item>15 times</item>
+    </string-array>
 </resources>
