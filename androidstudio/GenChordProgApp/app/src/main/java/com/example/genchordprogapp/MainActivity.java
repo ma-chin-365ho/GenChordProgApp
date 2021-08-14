@@ -2,13 +2,14 @@ package com.example.genchordprogapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.os.Bundle;
 
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinnerKey = (Spinner) findViewById(R.id.spinnerKey);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapterKey = ArrayAdapter.createFromResource(this,
-                R.array.keys_array, android.R.layout.simple_spinner_item);
+                R.array.keys_array, R.layout.custom_spinner);
         // Specify the layout to use when the list of choices appears
         adapterKey.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinnerChangeCount = (Spinner) findViewById(R.id.spinnerChangeCount);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapterChangeCount = ArrayAdapter.createFromResource(this,
-                R.array.change_counts_array, android.R.layout.simple_spinner_item);
+                R.array.change_counts_array, R.layout.custom_spinner);
         // Specify the layout to use when the list of choices appears
         adapterKey.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
@@ -93,8 +94,8 @@ public class MainActivity extends AppCompatActivity {
         spinnerChangeCount.setSelection(mChangeCountIdx);
 
         // Reload Button
-        Button button = (Button) findViewById(R.id.buttonReload);
-        button.setOnClickListener(new View.OnClickListener() {
+        ImageButton imgbtn = (ImageButton) findViewById(R.id.imageButtonReload);
+        imgbtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
                 binding.chordprogText.setText(genChordProgFromJNI(mKeyIdx, mChangeCountIdx));

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Generate Chord Progression</string>
+    <string name="app_name">Chord Progression Generator</string>
     <string-array name="keys_array">
         <item>A</item>
         <item>A#/Bb</item>
