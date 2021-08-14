@@ -16,6 +16,13 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.example.genchordprogapp.databinding.ActivityMainBinding;
 
+// Mobile Ads SDK
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'genchordprogapp' library on application startup.
@@ -27,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private int mKeyIdx = 3;
     private int mChangeCountIdx = 4;
 
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +42,16 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Mobile Ads SDK
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         // Chord Prog Text
         TextView tv = binding.chordprogText;
@@ -102,6 +120,33 @@ public class MainActivity extends AppCompatActivity {
                 binding.textViewTempoValue.setText(genTempoFromJNI());
             }
         });
+    }
+
+    /** Called when leaving the activity */
+    @Override
+    public void onPause() {
+        if (mAdView != null) {
+            mAdView.pause();
+        }
+        super.onPause();
+    }
+
+    /** Called when returning to the activity */
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mAdView != null) {
+            mAdView.resume();
+        }
+    }
+
+    /** Called before the activity is destroyed */
+    @Override
+    public void onDestroy() {
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
+        super.onDestroy();
     }
 
     /**
