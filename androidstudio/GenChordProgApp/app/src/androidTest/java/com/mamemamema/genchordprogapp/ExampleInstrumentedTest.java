@@ -1,4 +1,4 @@
-package com.example.genchordprogapp;
+package com.mamemamema.genchordprogapp;
 
 import android.content.Context;
 

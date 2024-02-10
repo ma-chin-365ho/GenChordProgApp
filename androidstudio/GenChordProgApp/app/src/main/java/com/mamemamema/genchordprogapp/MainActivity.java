@@ -1,4 +1,4 @@
-package com.example.genchordprogapp;
+package com.mamemamema.genchordprogapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +14,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 
-import com.example.genchordprogapp.databinding.ActivityMainBinding;
+import com.mamemamema.genchordprogapp.R;
+import com.mamemamema.genchordprogapp.databinding.ActivityMainBinding;
 
 // Mobile Ads SDK
 import com.google.android.gms.ads.MobileAds;

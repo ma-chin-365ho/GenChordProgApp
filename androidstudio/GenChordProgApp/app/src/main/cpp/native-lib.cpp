@@ -6,7 +6,7 @@ extern "C" {
 };
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_genchordprogapp_MainActivity_genChordProgFromJNI(
+Java_com_mamemamema_genchordprogapp_MainActivity_genChordProgFromJNI(
         JNIEnv* env, jobject, /* this */
         jint p_key_idx, jint p_chordChange_cnt
         ) {
@@ -24,7 +24,7 @@ Java_com_example_genchordprogapp_MainActivity_genChordProgFromJNI(
 }
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_genchordprogapp_MainActivity_genTempoFromJNI(
+Java_com_mamemamema_genchordprogapp_MainActivity_genTempoFromJNI(
         JNIEnv* env, jobject /* this */
 ) {
     char cTempo[3+1] = {0};

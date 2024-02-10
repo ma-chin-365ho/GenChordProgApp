@@ -3,14 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.genchordprogapp"
+        applicationId "com.mamemamema.genchordprogapp"
         minSdk 21
-        targetSdk 30
-        versionCode 1
-        versionName "1.0"
+        targetSdk 33
+        versionCode 3
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
@@ -39,6 +39,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.mamemamema.genchordprogapp'
 }
 
 dependencies {
@@ -51,4 +52,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    implementation 'androidx.work:work-runtime-ktx:2.7.0-alpha03'
 }
