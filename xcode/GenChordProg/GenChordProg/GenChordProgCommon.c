@@ -22,6 +22,7 @@
 #define TEMPO_MAX  200
 
 #define CHORD_NOTE_STACK_BUFF_SIZE 4
+#define NOTE_NAME_SIZE 6+1
 
 typedef enum NOTE_NAME_RING_IDX {
     NOTE_NAME_RING_A = 0,
@@ -97,7 +98,7 @@ struct stDiatonicCode {
     char chord_note_stack_cnt;
 } stDiatonicCode;
 
-const char noteNameRing[NOTE_NAME_RING_MAX][6+1] =
+const char noteNameRing[NOTE_NAME_RING_MAX][NOTE_NAME_SIZE] =
     {
         "A",
         "A#",
@@ -283,12 +284,63 @@ void c_GenChordProg(char * p_ptrChordProg, unsigned char p_key_idx, unsigned cha
     return;
 }
 
+int c_GetTempoSize(void)
+{
+    return TEMPO_SIZE_MAX+1;
+}
+
 void c_GenTempo(char * p_ptrTempo)
 {
     genTempo(p_ptrTempo);
 
     return;
 }
+
+int c_GetChordProgSize(void)
+{
+    return CHORD_PROG_SIZE;
+}
+
+int c_GetNoteNameSize(void)
+{
+    return NOTE_NAME_SIZE;
+}
+
+int c_GetNoteNameIdxMax(void)
+{
+    return NOTE_NAME_RING_MAX-1;
+}
+
+void c_GetNoteName(char * p_ptrNoteName, int p_idx)
+{
+    memset(p_ptrNoteName, 0, NOTE_NAME_SIZE);
+    if (p_idx < NOTE_NAME_RING_MAX)
+    {
+        sprintf(
+            p_ptrNoteName,
+            "%s",
+            noteNameRing[p_idx]
+        );
+    }
+    return;
+}
+
+int c_GetChordChangeCntIdxMax(void)
+{
+    return CHORD_CHANGE_CNT_IDX_MAX-1;
+}
+
+int c_GetChordChangeCnt(int idx)
+{
+    if (idx < CHORD_CHANGE_CNT_IDX_MAX) {
+        return chordChangeCnt[idx];
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 
 static void genChord(char chord[CHORD_SIZE_MAX+1])
 {
@@ -341,6 +393,8 @@ static void genDiatonicCode(unsigned char key_idx)
 static void genTempo(char tempo[TEMPO_SIZE_MAX+1])
 {
     srand((unsigned int)time(NULL));
+    int dummy_rand = rand(); /* NOTE: [iOS版] なぜかこれが無いと毎回同じ値になるので一回空振りさせておく。 */
+    int dummy2_rand = rand(); /* NOTE: [iOS版] 時間が近いと連続して同じものになったので、もう一回空振り。 */
 
     int rand_tempo = rand_range(TEMPO_MIN, TEMPO_MAX);
 
