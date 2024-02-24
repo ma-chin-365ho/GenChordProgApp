@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.Image;
 import android.os.Bundle;
 
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Spinner;
@@ -121,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
                 binding.textViewTempoValue.setText(genTempoFromJNI());
             }
         });
+
+        // Privacy Policy Text
+        TextView tv_tpp = binding.textViewPrivacyPolicy;
+        tv_tpp.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     /** Called when leaving the activity */

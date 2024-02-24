@@ -98,9 +98,15 @@
                 android:layout_height="61dp">
 
                 <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:id="@+id/textViewPrivacyPolicy"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|bottom"
+                    android:padding="5dp"
+                    android:text="@string/privacy_policy"
+                    android:textColor="#68655C"
+                    android:textSize="12sp" />
+
 
                 <TextView
                     android:id="@+id/textView6"

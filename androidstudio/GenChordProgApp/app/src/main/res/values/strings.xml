@@ -2,6 +2,7 @@
     <string name="app_name">Chord Progression Generator</string>
     <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="privacy_policy"><a href="http://mamemamema-privacy-policy.s3-website-ap-northeast-1.amazonaws.com/android_chord_progression_generator.html">Privacy Policy</a></string>
     <string-array name="keys_array">
         <item>A</item>
         <item>A#/Bb</item>
